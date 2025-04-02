@@ -7,6 +7,6 @@ module.exports.getResponse = async (req , res )=>{
     }
 
     const response = await aiService(prompt);
-    res.send(response);
+    res.send(response); 
 }
 
