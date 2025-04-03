@@ -1,3 +1,10 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body,
 #root {
  height: 100%;
  width: 100%;
@@ -18,8 +25,25 @@ main .right{
 }
 main .left{
 background-color: black;
+position: relative;
 }
 
 main .right{
   background-color: antiquewhite;
+}
+.left .code, .code pre, .code pre code{
+  height: 100%;
+  width: 100%;
+}
+main .left .review{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: antiquewhite;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
 }
